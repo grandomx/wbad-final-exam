@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="side-toggle" class="side-panel">
+                <h2><a href="">AdminPanel</a></h2>
+                <hr>
+
+                <div class="user">
+                    <a href=""><i class="fa fa-user"></i><span id="username">Username</span></a>
+                </div>
+                <hr>
+
+                <div class="search-container">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search fas"></i></button>
+                </div>
+
+                <div class="side-item">
+                    <a href="index.html" class="active"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                    <a href="management.html"><i class="fa fa-table"></i><span>Management</span></a>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="navbar">
+                    <div class="navbar-item">
+                        <a href="#" onClick="togglePanel()"><i class="fa fa-bars"></i></a>
+                        <a href="index.html"><span>Home</span></a>
+                    </div>
+                </div>
+    
+                <div class="main">
+                    <div class="content-wrapper">
+                        <h3>Dashboard</h3>
+
+                        <div class="main-item">
+                            <div class="item-book">
+                                <div class="pull-left">
+                                    <li>27</li>
+                                    <li class="nama">Buku</li>
+                                </div>
+                                <div class="pull-right"><i class="fa fa-book"></i></div>
+                                <div class="info">
+                                    <a href="#"><span>More Info</span> <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="item-guru">
+                                <div class="pull-left">
+                                    <li>8</li>
+                                    <li class="nama">Guru</li>
+                                </div>
+                                <div class="pull-right"><i class="fa fa-user"></i></div>
+                                <div class="info">
+                                    <a href="#"><span>More Info</span> <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="item-user">
+                                <div class="pull-left">
+                                    <li>44</li>
+                                    <li class="nama">User</li>
+                                </div>
+                                <div class="pull-right"><i class="ion ion-person-add"></i></div>
+                                <div class="info">
+                                    <a href="#"><span>More Info</span> <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="item-task">
+                                <div class="pull-left">
+                                    <li>13</li>
+                                    <li class="nama">Tugas</li>
+                                </div>
+                                <div class="pull-right"><i class="fa fa-tasks"></i></div>
+                                <div class="info">
+                                    <a href="#"><span>More Info</span> <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <strong>Copyright © 2021 <a href="">Samuel Christian</a>.</strong> All rights reserved.
+                    <div class="footer-right"><b>NIM</b> 2301857651</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

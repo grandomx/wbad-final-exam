@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: visible; background: #4f5962;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container" style="overflow: visible; background: #4f5962;">
+            <div class="login-form">
+                <h2>Login Form</h2>
+                <hr>
+                <div class="login-input">
+
+                    <label class="text">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <div class="alert" id="email-verif"></div>
+
+                    <label class="text">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <i class="fa fa-eye-slash" id="toggle-password" onClick="togglePw()"></i>
+                    <div class="alert" id="pw-verif"></div>
+
+                    <input type="submit" onClick="loginVl()" value="Log in">
+                    <span>Already registed? <a href="register.html">Click Here</a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
