@@ -4,15 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Learnify</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="js/script.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     </head>
 
     <body>
         <div class="container">
             <div id="side-toggle" class="side-panel">
-                <h2><a href="">AdminPanel</a></h2>
+                <h2><a href="">Learnify</a></h2>
+                <hr>
+
+                <div class="user">
+                    <a href=""><img src="img/user.png"><span id="username">Username</span></a>
+                </div>
                 <hr>
 
                 <div class="search-container">
@@ -29,15 +37,27 @@
             <div class="main-content">
                 <div class="navbar">
                     <div class="navbar-item">
-                        <a href="#" onClick="togglePanel()"><i class="fa fa-bars"></i></a>
+                        <i class="fa fa-bars" onClick="togglePanel()"></i>
                         <a href="index.html"><span>Home</span></a>
+                        <a href="login.html" class="sign-btn" id="sign-btn" onClick="logOut()"><i class="fa fa-sign-in"></i> Log In</a>
                     </div>
                 </div>
     
                 <div class="main">
-                    <h3>Management Data</h3>
+                    <div class="content-wrapper">
+                        <h3>Management Data</h3>
 
-                    
+                        <div class="data-wrapper">
+                            <table id="learnify" width="100%"></table>
+    
+                            <script src="js/table.js"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <strong>Copyright © 2021 <a href="">Samuel Christian</a>.</strong> All rights reserved.
+                    <div class="footer-right"><b>NIM</b> 2301857651</div>
                 </div>
             </div>
         </div>

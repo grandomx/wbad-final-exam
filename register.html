@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: visible; background: #4f5962;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learnify - Register</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <script src="js/users.js"></script>
+    </head>
+    <body>
+        <div class="container" style="overflow: visible; background: #4f5962;">
+            <div class="register-form">
+                <h2>Register Form</h2>
+                <hr>
+                <div class="reg-input">
+                    <label class="text">Full Name</label>
+                    <input type="text" name="name" id="name">
+                    <div class="alert" id="name-verif"></div>
+
+                    <label class="text">Email</label>
+                    <input type="email" name="email" id="email">
+                    <div class="alert" id="email-verif"></div>
+
+                    <label class="text">Password</label>
+                    <input type="password" name="password" id="password">
+                    <i class="fa fa-eye-slash" id="toggle-password" onClick="togglePw()"></i>
+                    <div class="alert" id="pw-verif"></div>
+
+                    <label class="text">Address</label>
+                    <input type="text" name="address" id="address">
+                    <div class="alert" id="addr-verif"></div>
+
+                    <label class="text">Phone Number</label>
+                    <input type="number" name="phone" id="phone">
+                    <div class="alert" id="phone-verif"></div>
+
+                    <label class="text">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                    <div class="alert" id="dob-verif"></div>
+
+                    <input type="submit" id="submit" onClick="regVl()" value="Sign up">
+                    <span>Already registed? <a href="login.html">Click Here</a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
