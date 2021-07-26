@@ -5,6 +5,10 @@ window.onload = function() {
     var storedUsers = JSON.parse(rtData);
     var storedName;
 
+    if (userSession == null) {
+        location.replace("login.html");
+    }
+
     for (var a = 0; a < storedUsers.length; a++) {
         var obj = storedUsers[a];
         

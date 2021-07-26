@@ -76,12 +76,16 @@ function loginVl() {
     var storedUsers = JSON.parse(rtData);
     var storedEmail;
     var storedPwd;
-    
-    for (var a = 0; a < storedUsers.length; a++) {
-        var obj = storedUsers[a];
-        
-        storedEmail = obj.email;
-        storedPwd = obj.password;
+
+    if (rtData == null) {
+        console.log("no data");
+    } else {
+        for (var a = 0; a < storedUsers.length; a++) {
+            var obj = storedUsers[a];
+            
+            storedEmail = obj.email;
+            storedPwd = obj.password;
+        }
     }
 
     // console.log(storedEmail);
